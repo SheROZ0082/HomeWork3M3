@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".medicFragment"
+    android:background="@drawable/img_1"
+    >
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/img5"
+
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="130dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_next1"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="NEXT"
+        android:textColor="@color/black"
+        android:backgroundTint="#9B00EE"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="550dp"
+        />
+
+    <Button
+        android:id="@+id/btn_skip1"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Skip"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/purple_200"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="550dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:text="WACCINE TYPES AVAILABLE"
+        android:layout_marginStart="15dp"
+        android:textSize="30sp"
+        android:layout_marginTop="200dp"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/solo"
+
+        android:layout_marginTop="300dp"
+        android:layout_marginStart="15dp"/>
+
+
+
+
+
+
+</FrameLayout>

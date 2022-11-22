@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/img_1">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/img5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="130dp"
+        tools:ignore="MissingConstraints" />
+
+
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="80dp"
+    android:id="@+id/conteiner">
+
+</FrameLayout>
+    <Button
+        android:id="@+id/btn_next1m"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="NEXT"
+        android:textColor="@color/black"
+        android:backgroundTint="#9B00EE"
+        android:layout_marginStart="240dp"
+        app:layout_constraintTop_toTopOf="@id/conteiner"
+        android:layout_marginTop="550dp"
+        app:layout_constraintStart_toStartOf="parent"
+
+        />
+
+    <Button
+        android:id="@+id/btn_skip1m"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Skip"
+        android:textColor="@color/black"
+        android:backgroundTint="#E286FC"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="550dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:text="WACCINE TYPES AVAILABLE"
+        android:layout_marginStart="15dp"
+        android:textSize="30sp"
+        android:layout_marginTop="200dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/solo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="300dp"
+        android:layout_marginStart="15dp"/>
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
