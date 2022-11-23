@@ -1,12 +1,12 @@
 package com.example.homework3m3;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 public class MainActivity extends AppCompatActivity {
     Button SkipBtn, NextBtn;
@@ -20,17 +20,17 @@ public class MainActivity extends AppCompatActivity {
 
         SkipBtn = findViewById(R.id.btn_skip1m);
         NextBtn = findViewById(R.id.btn_next1m);
-        if (savedInstanceState==null){
-            getSupportFragmentManager().beginTransaction().add(R.id.conteiner,medicFragment.class,null).commit();
+        if (savedInstanceState == null) {
+            getSupportFragmentManager().beginTransaction().add(R.id.conteiner, medicFragment.class, null).commit();
         }
 
         NextBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (fragment() instanceof medicFragment){
+                if (fragment() instanceof medicFragment) {
                     getSupportFragmentManager().beginTransaction().replace(R.id.conteiner, new medic2Fragment()).commit();
-                }else if (fragment() instanceof medic2Fragment){
-                    getSupportFragmentManager().beginTransaction().replace(R.id.conteiner,new Medic3Fragment()).commit();
+                } else if (fragment() instanceof medic2Fragment) {
+                    getSupportFragmentManager().beginTransaction().replace(R.id.conteiner, new Medic3Fragment()).commit();
                 }
             }
 
@@ -38,11 +38,11 @@ public class MainActivity extends AppCompatActivity {
                 return getSupportFragmentManager().findFragmentById(R.id.conteiner);
             }
         });
-SkipBtn.setOnClickListener(new View.OnClickListener() {
-    @Override
-    public void onClick(View view) {
-        getSupportFragmentManager().beginTransaction().replace(R.id.conteiner,new Medic3Fragment()).commit();
-    }
-});
+        SkipBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getSupportFragmentManager().beginTransaction().replace(R.id.conteiner, new Medic3Fragment()).commit();
+            }
+        });
     }
 }

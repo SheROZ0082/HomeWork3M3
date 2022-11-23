@@ -8,15 +8,6 @@
     tools:context=".MainActivity"
     android:background="@drawable/img_1">
 
-    <ImageView
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:src="@drawable/img5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="130dp"
-        tools:ignore="MissingConstraints" />
 
 
 
@@ -53,26 +44,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="300dp"
-        android:text="WACCINE TYPES AVAILABLE"
-        android:layout_marginStart="15dp"
-        android:textSize="30sp"
-        android:layout_marginTop="200dp"
-        android:textColor="@color/black"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/solo"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="300dp"
-        android:layout_marginStart="15dp"/>
 
 
 
